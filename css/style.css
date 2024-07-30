@@ -1,0 +1,96 @@
+/* Global Variable */
+:root {
+  --Green: hsl(75, 94%, 57%);
+  --White: hsl(0, 0%, 100%);
+  --Grey-700: hsl(0, 0%, 20%);
+  --Grey-800: hsl(0, 0%, 12%);
+  --Grey-900: hsl(0, 0%, 8%);
+}
+/* Global Variable */
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Inter", sans-serif;
+  background-color: var(--Grey-900);
+}
+
+.container {
+  background-color: var(--Grey-800);
+  width: 500px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 50px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  border-radius: 10px;
+}
+
+/* Small Screen */
+@media (max-width: 767px) {
+  .container {
+    width: 90%;
+    padding: 20px;
+  }
+}
+
+.container .about-me img {
+  width: 100px;
+  margin-bottom: 20px;
+}
+
+.container .about-me h1 {
+  color: var(--White);
+  margin: 0;
+  font-size: 25px;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+.container p {
+  font-size: 14px;
+}
+
+.container .about-me p.place {
+  color: var(--Green);
+  font-weight: 500;
+  margin-bottom: 30px;
+}
+
+.container .about-me p.career {
+  color: var(--White);
+  opacity: 0.8;
+  margin-bottom: 20px;
+}
+
+.container .btns-container {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.container .btns-container a button {
+  width: 100%;
+  padding: 15px 0;
+  font-size: 14px;
+  font-weight: bold;
+  color: white;
+  background-color: var(--Grey-700);
+  border: none;
+  outline: none;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.container .btns-container a button:hover {
+  background-color: var(--Green);
+  color: var(--Grey-700);
+}
